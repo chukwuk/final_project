@@ -18,6 +18,7 @@
 using namespace std;
 
 
+<<<<<<< HEAD
 void get_move(Intrepidstudent &student, Mazelevel &m, char &move)  {
 Mazelocation* locate;
 int num_p=0; int r_w = 0;
@@ -198,6 +199,12 @@ void move_ta_rand(Mazelevel &mazelevel_1, int MAZE_HEIGHT, int MAZE_WIDTH, Ta &h
    editor = mazelevel_1.get_location((hunter_ta.get_row_1()), hunter_ta.get_col_1());
    editor->set_has_ta(true);
 }
+=======
+
+
+
+
+>>>>>>> 3ca64790199fbd060cddd5a79d78c390fa643499
 
 int set_p(int rows, int cols, Mazelevel &m, int* &p_cordx, int* &p_cordy) {
     Mazelocation* locate;
@@ -219,7 +226,11 @@ int set_p(int rows, int cols, Mazelevel &m, int* &p_cordx, int* &p_cordy) {
          p_cordy[2] =  rand() % rows;
          locate = m.get_location(p_cordy[2],  p_cordx[2]);
      } while(false==locate->is_occupable() || ((p_cordx[0]==p_cordx[2] && p_cordy[0]==p_cordy[2]) || (p_cordx[1]==p_cordx[2] && p_cordy[1]==p_cordy[2]))  );
+<<<<<<< HEAD
   //  cout << p_cordx[2] << p_cordy[2] << endl;
+=======
+    cout << p_cordx[2] << p_cordy[2] << endl;
+>>>>>>> 3ca64790199fbd060cddd5a79d78c390fa643499
 
 //     delete locate;
 
