@@ -1,0 +1,24 @@
+
+#What decisions or assumptions did you make about how to design your program?
+
+The IntrepidStudent, TA, and Instructor classes are correctly implemented and derive from the (correctly implemented for the Mazeperson class(mazeperson.hpp). The .hpp and .cpp files for IntrepidStudent are intrepidstudent.hpp and intrepoidstudent.cpp. The .hpp and .cpp files for the TA are ta.hpp and ta.cpp. The .hpp and .cpp files for Instructor are instructor.cpp and instructor.cpp 
+
+The Wall and OpenSpace classes are correctly implemented and derive from the (correctly implemented) MazeLocation class. The Mazelocation class is the mazelocation.hpp file
+
+The maze class was not created because there is no point would be deducted for not creating the maze class. My maze class is similar to the supplem.hpp and supplem.cpp files that combines all the class to build the game. 
+
+#What was your test plan for your program?
+In the implementation.cpp(line 64). That line of code was used to test the program, in which the an exact location of student is entered by user to test if allthe events will occur. if the location of TA was entered as the location of the student. The level will reset.
+Comment out line 76 to 86 in implementation.cpp, if you want to test the program. line 76 to 86 is used to reset the level when the student is adjacent to the TA.this will help you move about the maze to pick up programming skills without the TA reseting the maze. it is also efficient in testing if the player will escape the maze when it gets to the final stage.  
+
+#How did your testing work out? What bugs did you uncover through testing? How did you fix those bugs?
+testing worked out smoothly. if the user pass a .txt file that cannot be opened. the program aborts. if the user enters a lowercase w or a, it shows an invalid input and prompt the user to enter the correct input
+
+
+#What problems or obstacles did you run into while you were developing your program? How did you resolve these?
+Segmentation faults would an obstacle, when returning two bool variable in a function. it was resolve by preventing the possibility of returning two bool variable in a function.
+
+
+#What resources were useful to you in solving problems you ran into? Were there helpful websites or Stack Overflow posts? What help did you get from the TAs and/or the Instructor? Were specific parts of the course notes helpful?
+The instructor was helpful by stating explicitly that the TA and programming skills should be displayed on the maze.
+Stackoverflow was helpful on how to deleting a 2D of vectors.
