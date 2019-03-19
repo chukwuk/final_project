@@ -1,3 +1,18 @@
+/****************************************
+******************* Program:intrepidstudent.cpp
+********************* Author:Kingsley C. Chukwu
+******************* Date: 3/19/2019
+******************* Description:implements all the function in the intrepidstudent.hpp.
+******************** Input: none
+****************** Output: none
+*******************************************************/
+
+
+
+
+
+
+
 #include <iostream>
 #include <string>
 #include <cstdlib>
@@ -27,7 +42,7 @@ Intrepidstudent::Intrepidstudent(int rows, int cols) {
 
 /******************************************************
 ******************************** Function:data_to_explore
-******************************** Description:print out the number that corresponds to the two option the player can play
+******************************** Description:print out the letter that corresponds to the direction the student can move
 ********************************* Parameters: none
 ********************************* Pre-Conditions: none
 ******************************** Post-Conditions: none
@@ -44,6 +59,13 @@ void Intrepidstudent::data_to_explore() {
    cout <<"Enter (U) if you want to move into the next level"<<endl; cout <<" "<<endl;
 }
 
+/******************************************************
+******************************** Function:get_move
+******************************** Description:accepts a character corresponding to the direction, which the player wants the student to move
+********************************* Parameters: none
+********************************* Pre-Conditions: must enter a valid character
+******************************** Post-Conditions: returns the character entered by the user
+************************************************************************************/
 
 char Intrepidstudent::get_move() {
    int r_w = 0; string uzo; char num_input;
@@ -55,7 +77,8 @@ char Intrepidstudent::get_move() {
        r_w++;
        cout << " " <<endl;
        data_to_explore();
-       getline (cin, uzo);
+       cin >> uzo;
+//       getline (cin, uzo);
     }  while  ((uzo != "W") && (uzo != "A") && (uzo != "S") && (uzo != "D") && (uzo != "U") && (uzo != "P"));
     num_input = uzo[0];
     return num_input;
@@ -73,18 +96,49 @@ char Intrepidstudent::get_move() {
 
 } */
 
+/******************************************************
+ * ******************************** Function:get_move
+ * ******************************** Description:move the students to direction corresponding to the letter entered by the player
+ * ********************************* Parameters: none
+ * ********************************* Pre-Conditions: must enter a valid character
+ * ******************************** Post-Conditions: moves the student
+ * ************************************************************************************/
 
 void Intrepidstudent::set_location(int x, int y) {
      this->rows = x;
      this->cols = y;
 }
 
+/******************************************************
+ * ******************************** Function:get_move
+ * ******************************** Description:move the students to direction corresponding to the letter entered by the player
+ * ********************************* Parameters: none
+ * ********************************* Pre-Conditions: must enter a valid character
+ * ******************************** Post-Conditions: moves the student
+ * ************************************************************************************/
+
 int Intrepidstudent::get_row() {
     return this->rows;
 }
+/******************************************************
+ * ******************************** Function:get_move
+ * ******************************** Description:move the students to direction corresponding to the letter entered by the player
+ * ********************************* Parameters: none
+ * ********************************* Pre-Conditions: must enter a valid character
+ * ******************************** Post-Conditions: moves the student
+ * ************************************************************************************/
+
 int  Intrepidstudent::get_col() {
     return this->cols;
 }
+
+/******************************************************
+ * ******************************** Function:get_move
+ * ******************************** Description:move the students to direction corresponding to the letter entered by the player
+ * ********************************* Parameters: none
+ * ********************************* Pre-Conditions: must enter a valid character
+ * ******************************** Post-Conditions: moves the student
+ * ************************************************************************************/
 
 void Intrepidstudent::set_p_skills(bool x) {
      if (x == true) {
@@ -94,6 +148,14 @@ void Intrepidstudent::set_p_skills(bool x) {
      this->p_skills--;
      }
 }
+/******************************************************
+ * ******************************** Function:get_move
+ * ******************************** Description:move the students to direction corresponding to the letter entered by the player
+ * ********************************* Parameters: none
+ * ********************************* Pre-Conditions: must enter a valid character
+ * ******************************** Post-Conditions: moves the student
+ * ************************************************************************************/
+
 
 void Intrepidstudent::p_skills_on(bool x) {
      if (x == true) {
@@ -104,6 +166,14 @@ void Intrepidstudent::p_skills_on(bool x) {
      }
 
 }
+/******************************************************
+ * ******************************** Function:get_move
+ * ******************************** Description:move the students to direction corresponding to the letter entered by the player
+ * ********************************* Parameters: none
+ * ********************************* Pre-Conditions: must enter a valid character
+ * ******************************** Post-Conditions: moves the student
+ * ************************************************************************************/
+
 
 bool Intrepidstudent::is_p_skills_on() {
      if (p_on==1) {

@@ -62,13 +62,13 @@ int main(int argc, char* argv[] ) {
    if (k == (NUM_LEVEL-1)) {
    set_instructor(mazelevel_1, MAZE_HEIGHT,MAZE_WIDTH, x_inst, y_inst); instructor.set_location(y_inst, x_inst);}
    student.set_location(locay, locax);  Ta hunter_ta(MAZE_HEIGHT, MAZE_WIDTH, mazelevel_1);    int count = 0; int count_troubleshoot = 0; 
-   student.p_skills_on(false);
+   student.p_skills_on(false); student.zero_pskills();
    set_begin_locate(mazelevel_1, student,hunter_ta, p_cordy, p_cordx);
    while (true) {
    count_troubleshoot++;
    //The commented line below is used to trouble shoot. The trouble shooter has to input the exact location where he want the student to be
    //in the maze. y is the row and x is column
- //  if (count_troubleshoot > 1) { int x; int y; cin >>y; cin >> x; trouble_shoot(student, mazelevel_1, y, x); }
+//   if (count_troubleshoot > 1) { int x; int y; cin >>y; cin >> x; trouble_shoot(student, mazelevel_1, y, x); }
    mazelevel_1.display_maze();
     //picks up the programming skills if the student is in the same space as the programming skills
     Mazelocation* editor_1; editor_1 = mazelevel_1.get_location(student.get_row(), student.get_col());

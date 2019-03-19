@@ -1,3 +1,14 @@
+/****************************************
+****************** Program:mazelocation.hpp
+******************** Author:Kingsley C. Chukwu
+****************** Date: 3/19/2019
+****************** Description:contains all the function prototype in the mazelocation.hpp and also it is an abstract class
+******************* Input: none
+***************** Output: none
+******************************************************/
+
+
+
 
 #ifndef MAZELOCATION_H
 #define MAZELOCATION_H

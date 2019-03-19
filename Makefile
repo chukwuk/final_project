@@ -1,5 +1,5 @@
 CC=g++
-EXE_F=wallgame
+EXE_F=escape
 
 
 all: $(EXE_F)

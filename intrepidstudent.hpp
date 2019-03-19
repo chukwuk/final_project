@@ -1,3 +1,15 @@
+/****************************************
+****************** Program:intrepidstudent.hpp
+******************** Author:Kingsley C. Chukwu
+****************** Date: 3/19/2019
+****************** Description:contains all the function prototype in the intrepidstuent.hpp.
+******************* Input: none
+***************** Output: none
+******************************************************/
+
+
+
+
 #ifndef INTREPIDSTUDENT_H
 #define INTREPIDSTUDENT_H
 

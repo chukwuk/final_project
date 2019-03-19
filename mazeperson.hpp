@@ -1,3 +1,15 @@
+/****************************************
+****************** Program:mazeperson.hpp
+******************** Author:Kingsley C. Chukwu
+****************** Date: 3/18/2019
+****************** Description:contains all the function prototype in the mazeperson.hpp and it is an abstract class
+******************* Input: none
+***************** Output: none
+******************************************************/
+
+
+
+
 #ifndef MAZEPERSON_H
 #define MAZEPERSON_H
 
