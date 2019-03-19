@@ -1,3 +1,19 @@
+/****************************************
+****************** Program:supplem.cpp
+******************** Author:Kingsley C. Chukwu
+****************** Date: 3/18/2019
+****************** Description:implements all the function in the supplem.hpp.
+******************* Input: none
+***************** Output: none
+******************************************************/
+
+
+
+
+
+
+
+
 #include <iostream>
 #include <string>
 #include <cstdlib>
@@ -16,6 +32,14 @@
 
 
 using namespace std;
+
+/******************************************************
+******************************** Function:get_move
+******************************** Description:it moves the student to the direction entered by the player
+********************************* Parameters: character, intrepidstudent class, mazelevel class
+********************************* Pre-Conditions: a student object, mazelevel object and a character must be passed in
+******************************** Post-Conditions: moves the student to a certain location. this is determined by the letter input by the player
+************************************************************************************/
 
 
 void get_move(Intrepidstudent &student, Mazelevel &m, char &move)  {
@@ -122,6 +146,14 @@ do {
 
 }
 
+/******************************************************
+********************************* Function:trouble_shoot
+********************************* Description:it moves the student to the location enetered by the trouble shooter
+********************************** Parameters: two integers, intrepidstudent class, mazelevel class
+********************************** Pre-Conditions: a student object, mazelevel object and  two integers
+********************************* Post-Conditions: moves the student to the location enetered by the trouble shooter
+ * ************************************************************************************/
+
 void trouble_shoot(Intrepidstudent &student, Mazelevel &m, int y, int x) {
     Mazelocation* editor; Mazelocation* locate;
     editor = m.get_location((student.get_row()), student.get_col());
@@ -133,6 +165,14 @@ void trouble_shoot(Intrepidstudent &student, Mazelevel &m, int y, int x) {
     locate->set_has_explorer(true);   
     }     
 }
+/******************************************************
+********************************** Function:clear_all
+********************************** Description:clears all the character on the maze eg the TA and P( programming skills)
+*********************************** Parameters: two integers, mazelevel class
+*********************************** Pre-Conditions:  mazelevel object, mazewidth and mazelength
+********************************** Post-Conditions: clears the maze
+*************************************************************************************/
+
 
 void clear_all(int MAZE_HEIGHT, int MAZE_WIDTH, Mazelevel &mazelevel_1) {
      Mazelocation* editor;
@@ -144,6 +184,14 @@ void clear_all(int MAZE_HEIGHT, int MAZE_WIDTH, Mazelevel &mazelevel_1) {
      }
 
 }
+/******************************************************
+********************************** Function:trouble_shoot
+********************************** Description:it moves the student to the location enetered by the trouble shooter
+*********************************** Parameters: two integers, intrepidstudent class, mazelevel class
+*********************************** Pre-Conditions: a student object, mazelevel object and  two integers
+********************************** Post-Conditions: moves the student to the location enetered by the trouble shooter
+*************************************************************************************/
+
 
 void set_begin_locate(Mazelevel &mazelevel_1, Intrepidstudent &student,Ta &hunter_ta, int* p_cordy, int* p_cordx) {
    Mazelocation* editor;
@@ -160,6 +208,14 @@ void set_begin_locate(Mazelevel &mazelevel_1, Intrepidstudent &student,Ta &hunte
 
 }
 
+/******************************************************
+********************************** Function:trouble_shoot
+********************************** Description:it moves the student to the location enetered by the trouble shooter
+*********************************** Parameters: two integers, intrepidstudent class, mazelevel class
+*********************************** Pre-Conditions: a student object, mazelevel object and  two integers
+********************************** Post-Conditions: moves the student to the location enetered by the trouble shooter
+************************************************************************************/
+
 void set_student(Mazelevel &mazelevel_1, int MAZE_HEIGHT, int MAZE_WIDTH, int &locax, int &locay) {
   Mazelocation* locate;
    for (int i = 0; i < MAZE_HEIGHT; i++) {
@@ -171,6 +227,13 @@ void set_student(Mazelevel &mazelevel_1, int MAZE_HEIGHT, int MAZE_WIDTH, int &l
         }
    }
 }
+/******************************************************
+ * ********************************* Function:trouble_shoot
+ * ********************************* Description:it moves the student to the location enetered by the trouble shooter
+ * ********************************** Parameters: two integers, intrepidstudent class, mazelevel class
+ * ********************************** Pre-Conditions: a student object, mazelevel object and  two integers
+ * ********************************* Post-Conditions: moves the student to the location enetered by the trouble shooter
+ *  * ************************************************************************************/
 
 void set_instructor(Mazelevel &mazelevel_1, int MAZE_HEIGHT, int MAZE_WIDTH, int &locax, int &locay) {
   Mazelocation* locate;
@@ -183,6 +246,14 @@ void set_instructor(Mazelevel &mazelevel_1, int MAZE_HEIGHT, int MAZE_WIDTH, int
         }
    }
 }
+
+/******************************************************
+ * ********************************* Function:trouble_shoot
+ * ********************************* Description:it moves the student to the location enetered by the trouble shooter
+ * ********************************** Parameters: two integers, intrepidstudent class, mazelevel class
+ * ********************************** Pre-Conditions: a student object, mazelevel object and  two integers
+ * ********************************* Post-Conditions: moves the student to the location enetered by the trouble shooter
+ *  * ************************************************************************************/
 
 
 

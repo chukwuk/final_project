@@ -1,3 +1,19 @@
+/****************************************
+****************** Program:supplem.hpp
+******************** Author:Kingsley C. Chukwu
+****************** Date: 3/18/2019
+****************** Description:contains all the function prototype in the supplem.hpp.
+******************* Input: none
+***************** Output: none
+******************************************************/
+
+
+
+
+
+
+
+
 #ifndef SUPPLEM_H
 #define SUPPLEM_H
 
