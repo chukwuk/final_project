@@ -1,3 +1,16 @@
+/****************************************
+******************* Program:wall.hpp
+********************* Author:Kingsley C. Chukwu
+******************* Date: 3/19/2019
+******************* Description:contains all the function prototype in the wall.hpp and contains definition of the wall class
+******************** Input: none
+****************** Output: none
+*******************************************************/
+
+
+
+
+
 #ifndef WALL_H
 #define WALL_H
 

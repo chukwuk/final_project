@@ -1,3 +1,15 @@
+/****************************************
+ * ******************* Program:mazelevel.cpp
+ * ********************* Author:Kingsley C. Chukwu
+ * ******************* Date: 3/19/2019
+ * ******************* Description:implements all the function in the mazelevel.hpp.
+ * ******************** Input: none
+ * ****************** Output: none
+ * *******************************************************/
+
+
+
+
 
 
 #include <iostream>
@@ -16,6 +28,15 @@
 
 
 using namespace std;
+
+/******************************************************
+ * ******************************** Function:Mazelevel
+ * ******************************** Description:it is a parameterized constructor that reads a text file containing the maze 
+ * ********************************* Parameters: ifstream , two integers
+ * ********************************* Pre-Conditions: a readable file, two integers representing the maze height and width
+ * ******************************** Post-Conditions: reads  the maze into a vector of mazelocation
+ * ************************************************************************************/
+
 
 Mazelevel::Mazelevel(ifstream &infile, int MAZE_HEIGHT, int MAZE_WIDTH) : MAZE_HEIGHT(MAZE_HEIGHT), MAZE_WIDTH(MAZE_WIDTH)  {
 
@@ -39,6 +60,14 @@ Mazelevel::Mazelevel(ifstream &infile, int MAZE_HEIGHT, int MAZE_WIDTH) : MAZE_H
  
 }
 
+/******************************************************
+ * ******************************** Function:display_maze
+ * ******************************** Description:print out each location in the maze
+ * ********************************* Parameters: none
+ * ********************************* Pre-Conditions: none
+ * ******************************** Post-Conditions: prints out the maze
+ * ************************************************************************************/
+
 
 void Mazelevel::display_maze() {
      for (int i = 0; i < this->MAZE_HEIGHT; i++) {
@@ -50,11 +79,28 @@ void Mazelevel::display_maze() {
 
 }
 
+/******************************************************
+ * ******************************** Function:data_to_explore
+ * ******************************** Description:print out the letter that corresponds to the direction the student can move
+ * ********************************* Parameters: none
+ * ********************************* Pre-Conditions: none
+ * ******************************** Post-Conditions: none
+ * ************************************************************************************/
+
 
 
 Mazelocation* Mazelevel::get_location(int rows, int cols) {
              return this->locations[rows][cols];
 }
+
+/******************************************************
+ * ******************************** Function:data_to_explore
+ * ******************************** Description:print out the letter that corresponds to the direction the student can move
+ * ********************************* Parameters: none
+ * ********************************* Pre-Conditions: none
+ * ******************************** Post-Conditions: none
+ * ************************************************************************************/
+
 
 vector<string>  return_token(std::string sInput) {
     vector <string> tokens;
@@ -70,6 +116,14 @@ vector<string>  return_token(std::string sInput) {
      return tokens;
 
 }
+
+/******************************************************
+ * ******************************** Function:data_to_explore
+ * ******************************** Description:print out the letter that corresponds to the direction the student can move
+ * ********************************* Parameters: none
+ * ********************************* Pre-Conditions: none
+ * ******************************** Post-Conditions: none
+ * ************************************************************************************/
 
 
 Mazelevel::~Mazelevel() {
@@ -94,19 +148,4 @@ Mazelevel::~Mazelevel() {
     
 }
 
-/*int main() {
-   Maze h;
-   h.display_maze();
-   Mazelocation** kc = new Mazelocation*[10];
-   for (int i = 0; i < 10; i++) {
-       kc[i] = new Wall;
-   }
-   cout <<" "<<endl;
-   for (int i = 0; i < 10; i++) {
-       cout <<(kc[i])->get_display_character();
 
-   }
-   cout <<endl;
-
-
-} */

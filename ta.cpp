@@ -1,3 +1,18 @@
+/****************************************
+ * ******************* Program:ta.cpp
+ * ********************* Author:Kingsley C. Chukwu
+ * ******************* Date: 3/19/2019
+ * ******************* Description:implements all the function in the ta.hpp.
+ * ******************** Input: none
+ * ****************** Output: none
+ * *******************************************************/
+
+
+
+
+
+
+
 #include <iostream>
 #include <string>
 #include <cstdlib>
@@ -15,6 +30,17 @@
 using namespace std;
 
 //srand(time(0));
+
+/******************************************************
+ ********************************** Function:Mazelevel
+ ********************************** Description:it is a parameterized constructor that reads a text file containing the maze
+ *********************************** Parameters: ifstream , two integers
+ *********************************** Pre-Conditions: a readable file, two integers representing the maze height and width
+ ********************************** Post-Conditions: reads  the maze into a vector of mazelocation
+ **************************************************************************************/
+
+
+
 
 Ta::Ta(int rows, int cols, Mazelevel &m) {
     srand(time(0));

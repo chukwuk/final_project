@@ -1,3 +1,17 @@
+/***************************************
+******************* Program:mazelevel.hpp
+********************* Author:Kingsley C. Chukwu
+******************** Date: 3/19/2019
+******************** Description:contains all the function prototype in the mazelevel.hpp and the definition of the mazelevel class
+********************* Input: none
+******************* Output: none
+********************************************************/
+
+
+
+
+
+
 #ifndef MAZELEVEL_H
 #define MAZELEVEL_H
 

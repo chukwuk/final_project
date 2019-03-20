@@ -1,3 +1,19 @@
+/****************************************
+ * ******************* Program:instructor.cpp
+ * ********************* Author:Kingsley C. Chukwu
+ * ******************* Date: 3/19/2019
+ * ******************* Description:implements all the function in the instructor.hpp.
+ * ******************** Input: none
+ * ****************** Output: none
+ * *******************************************************/
+
+
+
+
+
+
+
+
 #include <iostream>
 #include <string>
 #include <cstdlib>
@@ -12,6 +28,15 @@
 #include "instructor.hpp"
 
 using namespace std;
+
+/******************************************************
+ ** ******************************** Function:Mazelevel
+ ** ******************************** Description:it is a parameterized constructor that reads a text file containing the maze
+ ** ********************************* Parameters: ifstream , two integers
+ ** ********************************* Pre-Conditions: a readable file, two integers representing the maze height and width
+ ** ******************************** Post-Conditions: reads  the maze into a vector of mazelocation
+ * * ************************************************************************************/
+
 
 
 Instructor::Instructor(int rows, int cols) {
