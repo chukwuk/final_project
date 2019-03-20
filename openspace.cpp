@@ -26,6 +26,14 @@
 
 using namespace std;
 
+/******************************************************
+********************************* Function:Openspace
+********************************* Description:it is parametized constructor that initialize value of all the members
+********************************** Parameters: none
+********************************** Pre-Conditions: none
+********************************* Post-Conditions: none
+*************************************************************************************/
+
 
 Openspace::Openspace(char d_char) : d_char(d_char) { 
          this->anoda_char = ' ';
@@ -33,16 +41,43 @@ Openspace::Openspace(char d_char) : d_char(d_char) {
          this->ta_char = ' ';
 } 
 
+/******************************************************
+ * ******************************** Function:clear_all
+ * ******************************** Description:clears all the characters in  the openspace when the maze is on reset
+ * ********************************* Parameters: none
+ * ********************************* Pre-Conditions: none
+ * ******************************** Post-Conditions: clear alll the character
+ * ************************************************************************************/
+
+
 void Openspace::clear_all()  {
          this->anoda_char = ' ';
          this->p_char = ' ';
          this->ta_char = ' ';
 }
 
+/******************************************************
+ * ******************************** Function:is_occupable
+ * ******************************** Description:returns true 
+ * ********************************* Parameters: none
+ * ********************************* Pre-Conditions: none
+ * ******************************** Post-Conditions: returns true
+ * ************************************************************************************/
+
 
 bool Openspace::is_occupable() {
     return true;
 }
+
+/******************************************************
+ * ******************************** Function:data_to_explore
+ * ******************************** Description:print out the letter that corresponds to the direction the student can move
+ * ********************************* Parameters: none
+ * ********************************* Pre-Conditions: none
+ * ******************************** Post-Conditions: none
+ * ************************************************************************************/
+
+
 char Openspace::get_display_character() {
      if (true == Openspace::has_explorer()) {
         return this->anoda_char;
@@ -59,11 +94,27 @@ char Openspace::get_display_character() {
     } */
 }
 
+/******************************************************
+ * ******************************** Function:data_to_explore
+ * ******************************** Description:print out the letter that corresponds to the direction the student can move
+ * ********************************* Parameters: none
+ * ********************************* Pre-Conditions: none
+ * ******************************** Post-Conditions: none
+ * ************************************************************************************/
+
 void Openspace::set_is_start(bool x) {
     if (x==true) {
     d_char = '@';
    }
 }
+
+/******************************************************
+ * ******************************** Function:data_to_explore
+ * ******************************** Description:print out the letter that corresponds to the direction the student can move
+ * ********************************* Parameters: none
+ * ********************************* Pre-Conditions: none
+ * ******************************** Post-Conditions: none
+ * ************************************************************************************/
 
 bool Openspace::is_start() {
     if (d_char=='@') {
@@ -75,11 +126,30 @@ bool Openspace::is_start() {
 
 }
 
+
+/******************************************************
+ * ******************************** Function:data_to_explore
+ * ******************************** Description:print out the letter that corresponds to the direction the student can move
+ * ********************************* Parameters: none
+ * ********************************* Pre-Conditions: none
+ * ******************************** Post-Conditions: none
+ * ************************************************************************************/
+
 void Openspace::set_is_end(bool x) {
     if (x==true) {
     this->d_char = '^';
    }
 }
+
+/******************************************************
+ * ******************************** Function:data_to_explore
+ * ******************************** Description:print out the letter that corresponds to the direction the student can move
+ * ********************************* Parameters: none
+ * ********************************* Pre-Conditions: none
+ * ******************************** Post-Conditions: none
+ * ************************************************************************************/
+
+
 
 bool Openspace::is_end() {
     if (this->d_char=='^') {
@@ -91,6 +161,15 @@ bool Openspace::is_end() {
 
 }
 
+/******************************************************
+ * ******************************** Function:data_to_explore
+ * ******************************** Description:print out the letter that corresponds to the direction the student can move
+ * ********************************* Parameters: none
+ * ********************************* Pre-Conditions: none
+ * ******************************** Post-Conditions: none
+ * ************************************************************************************/
+
+
 void Openspace::set_has_explorer(bool x) {
    if (x == true) {
      this->anoda_char = '*';
@@ -100,6 +179,14 @@ void Openspace::set_has_explorer(bool x) {
    }
     
 }
+
+/******************************************************
+ * ******************************** Function:data_to_explore
+ * ******************************** Description:print out the letter that corresponds to the direction the student can move
+ * ********************************* Parameters: none
+ * ********************************* Pre-Conditions: none
+ * ******************************** Post-Conditions: none
+ * ************************************************************************************/
 
 
 bool Openspace::has_explorer() {
@@ -111,6 +198,15 @@ bool Openspace::has_explorer() {
     }
 
 }
+
+/******************************************************
+ * ******************************** Function:data_to_explore
+ * ******************************** Description:print out the letter that corresponds to the direction the student can move
+ * ********************************* Parameters: none
+ * ********************************* Pre-Conditions: none
+ * ******************************** Post-Conditions: none
+ * ************************************************************************************/
+
 
 void Openspace::set_has_pskills(bool x) {
      if (x == true) {
@@ -124,6 +220,15 @@ void Openspace::set_has_pskills(bool x) {
   
 }
 
+/******************************************************
+ * ******************************** Function:data_to_explore
+ * ******************************** Description:print out the letter that corresponds to the direction the student can move
+ * ********************************* Parameters: none
+ * ********************************* Pre-Conditions: none
+ * ******************************** Post-Conditions: none
+ * ************************************************************************************/
+
+
 bool Openspace::has_pskills() {
      if (this->p_char=='P') {
        return true;
@@ -133,6 +238,15 @@ bool Openspace::has_pskills() {
     }
   
 }
+
+/******************************************************
+ * ******************************** Function:data_to_explore
+ * ******************************** Description:print out the letter that corresponds to the direction the student can move
+ * ********************************* Parameters: none
+ * ********************************* Pre-Conditions: none
+ * ******************************** Post-Conditions: none
+ * ************************************************************************************/
+
 
 void  Openspace::set_has_ta(bool x) {
       if (x == true) {
@@ -144,6 +258,14 @@ void  Openspace::set_has_ta(bool x) {
 
 
 }
+
+/******************************************************
+ * ******************************** Function:data_to_explore
+ * ******************************** Description:print out the letter that corresponds to the direction the student can move
+ * ********************************* Parameters: none
+ * ********************************* Pre-Conditions: none
+ * ******************************** Post-Conditions: none
+ * ************************************************************************************/
 
 bool Openspace::has_ta() {
      if (this->ta_char=='T') {
