@@ -112,6 +112,7 @@ int main(int argc, char* argv[] ) {
       break;
    }
    }
+   //randomly moves the TA in the maze
    move_ta_rand(mazelevel_1, MAZE_HEIGHT, MAZE_WIDTH, hunter_ta);
     mazelevel_1.display_maze();
   }
