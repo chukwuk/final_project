@@ -5,7 +5,7 @@ The IntrepidStudent, TA, and Instructor classes are correctly implemented and de
 
 The Wall and OpenSpace classes are correctly implemented and derive from the (correctly implemented) MazeLocation class. The Mazelocation class is the mazelocation.hpp file
 
-The maze class was not created because there is no point would be deducted for not creating the maze class. My maze class is similar to the supplem.hpp and supplem.cpp files that combines all the class to build the game. All parts of the game was implemented.
+The maze class was not created because NO point would be deducted for not creating the maze class. My maze class is similar to the supplem.hpp and supplem.cpp files that combines all the class to build the game. All parts of the game was implemented AND everything works fine. When the TA is adjacent (in same column as the player or in the same row as the player) to player, the level reset. 
 
 #What was your test plan for your program?
 In the implementation.cpp(line 71). That line of code was used to test the program, in which the an exact location of student is entered by user to test if all the events will occur. if the location of TA was entered as the location of the student, then the level will reset.
