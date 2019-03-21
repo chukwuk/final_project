@@ -99,7 +99,7 @@ int main(int argc, char* argv[] ) {
    if (k < NUM_LEVEL-1) {
    if (move == 'U' && true == ending->is_end() )  { 
         student.add_to_total();
-      cout<<""<<endl; cout<<"Mazelevel " <<k+1<<"  is finished, you are moving into the level "<<k+2<<endl;  break;} }
+      cout<<""<<endl; cout<<"Maze level " <<k+1<<"  is finished, you are moving into maze level "<<k+2<<endl;  break;} }
    if (k == NUM_LEVEL-1) {
    if (student.get_row() == instructor.get_row())  {
      student.add_to_total();
