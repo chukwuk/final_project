@@ -28,6 +28,15 @@
 
 using namespace std;
 
+/******************************************************
+********************************* Function:intrepidstudent
+********************************* Description:it is paramaterized constructor which initialize the location of the student
+********************************** Parameters: two integers
+********************************** Pre-Conditions: pass two integer arguments for the row index and column index
+********************************* Post-Conditions: initialize the location of the student
+*************************************************************************************/
+
+
 
 Intrepidstudent::Intrepidstudent(int rows, int cols) {
             this->rows = rows;
@@ -85,23 +94,12 @@ char Intrepidstudent::get_move() {
 }
 
 
-/*
-char Intrepidstudent::get_move() {
-     srand(time(0));
-     int x = rand() % 4;
-     if (x==0) { return 'W'; }
-     if (x==1) { return 'A'; }
-     if (x==2) { return 'S'; }
-     if (x==3) { return 'D'; }
-
-} */
-
 /******************************************************
- * ******************************** Function:get_move
- * ******************************** Description:move the students to direction corresponding to the letter entered by the player
- * ********************************* Parameters: none
- * ********************************* Pre-Conditions: must enter a valid character
- * ******************************** Post-Conditions: moves the student
+ * ******************************** Function:set_location
+ * ******************************** Description:sets he new locatiion of the student
+ * ********************************* Parameters: two integer  value
+ * ********************************* Pre-Conditions: pass two integer argument for the row index and column index
+ * ******************************** Post-Conditions: set the location of the student
  * ************************************************************************************/
 
 void Intrepidstudent::set_location(int x, int y) {
@@ -166,6 +164,8 @@ void Intrepidstudent::p_skills_on(bool x) {
      }
 
 }
+
+
 /******************************************************
  * ******************************** Function:get_move
  * ******************************** Description:move the students to direction corresponding to the letter entered by the player
@@ -204,18 +204,61 @@ void Intrepidstudent::set_p_skills_3(bool x) {
 
 } */
 
+
+/******************************************************
+ * ******************************** Function:get_move
+ ** ******************************** Description:move the students to direction corresponding to the letter entered by the player
+ ** ********************************* Parameters: none
+ ** ********************************* Pre-Conditions: must enter a valid character
+ * * ******************************** Post-Conditions: moves the student
+ ** ************************************************************************************/
+
+
+
 int Intrepidstudent::get_total_p_skills() {
 //       this->total_p_skills = this->p_skills_1+this->p_skills_2+this->p_skills_3;
        return this->total_p_skills;
 }
 
+
+/******************************************************
+ *  * ******************************** Function:get_move
+ *   * ******************************** Description:move the students to direction corresponding to the letter entered by the player
+ *    * ********************************* Parameters: none
+ *     * ********************************* Pre-Conditions: must enter a valid character
+ *      * ******************************** Post-Conditions: moves the student
+ *       * ************************************************************************************/
+
+
+
 void  Intrepidstudent::add_to_total() {
     this->total_p_skills+=p_skills;
 }
 
+/******************************************************
+ *  * ******************************** Function:get_move
+ *   * ******************************** Description:move the students to direction corresponding to the letter entered by the player
+ *    * ********************************* Parameters: none
+ *     * ********************************* Pre-Conditions: must enter a valid character
+ *      * ******************************** Post-Conditions: moves the student
+ *       * ************************************************************************************/
+
+
+
 int Intrepidstudent::get_set_p_skills() {
     return this->p_skills;
 }
+
+
+/******************************************************
+ *  * ******************************** Function:get_move
+ *   * ******************************** Description:move the students to direction corresponding to the letter entered by the player
+ *    * ********************************* Parameters: none
+ *     * ********************************* Pre-Conditions: must enter a valid character
+ *      * ******************************** Post-Conditions: moves the student
+ *       * ************************************************************************************/
+
+
 
 void Intrepidstudent::zero_pskills() {
     this->total_p_skills = 0;
@@ -227,28 +270,4 @@ int Intrepidstudent::get_set_p_skills_3() {
     return this->p_skills_3;
 }*/
 
-/*int set_p(int rows, int cols, Mazelevel &m, int* &p_cordx, int* &p_cordy) {
-    Mazelocation* locate;
-    srand(time(0));
-    do {
-         p_cordx[0] = rand() % cols;
-         p_cordy[0] =  rand() % rows;
-         locate = m.get_location(p_cordy[0],  p_cordx[0]);
-     } while(false==locate->is_occupable());
-//     cout << p_cordx[0] << p_cordy[0] << endl;
-    do {
-         p_cordx[1] = rand() % cols;
-         p_cordy[1] =  rand() % rows;
-         locate = m.get_location(p_cordy[1],  p_cordx[1]);
-     } while(false==locate->is_occupable() || (p_cordx[0]==p_cordx[1] && p_cordy[0]==p_cordy[1]));
-//     cout << p_cordx[1] << p_cordy[1] << endl;
-    do {
-         p_cordx[2] = rand() % cols;
-         p_cordy[2] =  rand() % rows;
-         locate = m.get_location(p_cordy[2],  p_cordx[2]);
-     } while(false==locate->is_occupable() || ((p_cordx[0]==p_cordx[2] && p_cordy[0]==p_cordy[2]) || (p_cordx[1]==p_cordx[2] && p_cordy[1]==p_cordy[2]))  );
-//     cout << p_cordx[2] << p_cordy[2] << endl;
-//
-     //delete locate;
 
-} */

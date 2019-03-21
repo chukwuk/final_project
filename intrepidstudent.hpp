@@ -2,7 +2,7 @@
 ****************** Program:intrepidstudent.hpp
 ******************** Author:Kingsley C. Chukwu
 ****************** Date: 3/19/2019
-****************** Description:contains all the function prototype in the intrepidstuent.hpp.
+****************** Description:contains all the function prototype in the intrepidstuent.hpp and definition of the intrepidstudent class
 ******************* Input: none
 ***************** Output: none
 ******************************************************/
